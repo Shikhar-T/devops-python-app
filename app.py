@@ -2,12 +2,10 @@ from flask import Flask
 app = Flask(__name__)
 
 @app.route('/')
-def hello():
-    return "Hello DevOps 🚀"
-
-@app.route('/test')
-def test():
-    return "Hello FINAL CI/CD 🚀"
+def combined_message():
+    line1 = "Hello DevOps 🚀"
+    line2 = "Hello FINAL CI/CD 🚀"
+    return f"{line1} <br> {line2}"
 
 if __name__ == "__main__":
     app.run(host="0.0.0.0", port=5000)
