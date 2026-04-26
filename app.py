@@ -4,7 +4,7 @@ app = Flask(__name__)
 @app.route('/')
 def combined_message():
     line1 = "Hello DevOps 🚀"
-    line2 = "Hello FINAL CI/CD 🚀"
+    line2 = "Hello FINAL CI/CD   🚀"
     return f"{line1} <br> {line2}"
 
 if __name__ == "__main__":
